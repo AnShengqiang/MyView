@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyView</string>
+    <string name="planet_1">近星速度</string>
+    <string name="earth">地球速度</string>
+    <string name="planet_2">远星速度</string>
+
+    <string name="planet_1_earth_line">近地线</string>
+    <string name="planet_2_earth_line">远地线</string>
+</resources>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/planet_1"
+                android:layout_weight="2"/>
+            <TextView
+                android:id="@+id/planet_1_speed_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="150"
+                android:layout_weight="1"/>
+            <SeekBar
+                android:id="@+id/planet_1_speed_seek_bar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:max="500"
+                android:progress="150"
+                android:layout_weight="8"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/earth"
+                android:layout_weight="2"/>
+            <TextView
+                android:id="@+id/earth_speed_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="250"
+                android:layout_weight="1"/>
+            <SeekBar
+                android:id="@+id/earth_speed_seek_bar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:max="500"
+                android:progress="250"
+                android:layout_weight="8"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/planet_2"
+                android:layout_weight="2"/>
+            <TextView
+                android:id="@+id/planet_2_speed_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="60"
+                android:layout_weight="1"/>
+            <SeekBar
+                android:id="@+id/planet_2_speed_seek_bar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:max="500"
+                android:progress="60"
+                android:layout_weight="8"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/planet_1_earth_line"/>
+
+                <ToggleButton
+                    android:id="@+id/planet_1_earth_line_toggle_button"
+                    style="@android:style/Widget.Holo.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/planet_2_earth_line"/>
+
+                <ToggleButton
+                    android:id="@+id/planet_2_earth_line_toggle_button"
+                    style="@android:style/Widget.Holo.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.anshengqiang.android.myview.GalaxyView
+            android:id="@+id/galaxyView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
